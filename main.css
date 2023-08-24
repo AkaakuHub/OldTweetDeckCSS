@@ -1,0 +1,206 @@
+/* 𝕏化 */
+div[class="js-app-loading login-container"] div[class="block txt-center js-signin-ui"] {
+    position: relative;
+}
+div[class="js-app-loading login-container"] div[class="block txt-center js-signin-ui"]:after {
+  content: "𝕏";
+    color: #fff;
+    font-size: 25em;
+    background-color: #1c2938;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+ul[class="js-int-scroller"]{
+    position: relative;
+}
+ul[class="js-int-scroller"]:after{
+    color: #fff;
+    font-size: 3em;
+    content:"𝕏";
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ボタンの大きさ */
+.dm-action .icon, .dm-action .Icon, .tweet-action .icon, .tweet-action .Icon, .tweet-detail-action .icon, .tweet-detail-action .Icon {
+    display: block;
+    font-size: 25px;
+}
+html.dark .dm-action .icon, html.dark .dm-action .Icon, html.dark .tweet-action .icon, html.dark .tweet-action .Icon, html.dark .tweet-detail-action .icon, html.dark .tweet-detail-action .Icon {
+    display: block;
+    font-size: 25px;
+}
+/* ドロップダウンメニューがはみ出さないように */
+.js-dropdown-content a::before{
+    font-size: 10.5px;
+}
+/* 返信のボックス色 */
+html.dark .bg-color-twitter-white {
+    background-color: #15202b!important;
+    color:#fff;
+}
+html.dark .compose-text-container {
+    background-color: #15202b;
+}
+
+
+/* いろいろ日本語化 */
+/* 日本語化は現在不可能
+span[class="column-heading"]
+{
+	font-size:0;
+}
+section[data-column-type="col_timeline"] span[class="column-heading"]:before{
+	content:"ホーム";
+	font-size:14px;
+}
+section[data-column-type="col_interactions"] span[class="column-heading"]:before{
+	content:"通知";
+	font-size:14px;
+}
+section[data-column-type="col_usertweets"] span[class="column-heading"]:before{
+	content:"ユーザー";
+	font-size:14px;
+}
+section[data-column-type="col_messages"] span[class="column-heading"]:before{
+	content:"DM";
+	font-size:14px;
+}
+section[data-column-type="col_trends"] span[class="column-heading"]:before{
+	content:"トレンド";
+	font-size:14px;
+}
+section[data-column-type="col_favorites"] span[class="column-heading"]:before{
+	content:"いいね";
+	font-size:14px;
+}
+section[data-column-type="col_mentions"] span[class="column-heading"]:before{
+	content:"メンション";
+	font-size:14px;
+}
+section[data-column-type="col_followers"] span[class="column-heading"]:before{
+	content:"フォロワー";
+	font-size:14px;
+}
+section[data-column-type="col_scheduled"] span[class="column-heading"]:before{
+	content:"予約ツイート";
+	font-size:14px;
+}
+section[data-column-type="col_inbox"] span[class="column-heading"]:before{
+	content:"DM(全アカウント)";
+	font-size:14px;
+}
+section[data-column-type="col_me"] span[class="column-heading"]:before{
+	content:"メンション(全アカウント)";
+	font-size:14px;
+}
+section[data-column-type="col_activity"] span[class="column-heading"]:before{
+	content:"アクティビティ";
+	font-size:14px;
+}
+
+div[class="nbfc txt-line-height--20 flex-auto padding-b--2"] {
+    color:transparent;
+}
+article[data-key*="favorite_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after {
+    content: "さんがあなたのツイートをいいねしました";
+    font-size: 1em;
+    color: #fff;
+    position: relative;
+    left: 0em; 
+}
+
+article[data-key*="retweet_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after{
+	content:"さんがあなたのツイートをリツイートしました";
+    font-size:1em;
+    color: #fff;
+    position: relative;
+    left: 0em; 
+}
+article[data-key*="favorited_retweet_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after{
+	content:"さんがあなたのリツイートをいいねしました";
+    font-size:1em;
+    color: #fff;
+    position: relative;
+    left: 0em;
+}
+article[data-key*="retweeted_retweet_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after{
+	content:"さんがあなたのリツイートをリツイートしました";
+    font-size:1em;
+    color: #fff;
+    position: relative;
+    left: 0em; 
+}
+
+
+div[class="prf-actions"] button[class="action-text follow-text btn-on-dark"] span{
+    color:transparent;
+}
+div[class="prf-actions"] button[class="action-text follow-text btn-on-dark"] span:before{
+    content:"フォローする";
+    font-size:1em;
+    color:#1da1f2;
+    position: relative;
+    left: 0em; 
+}
+div[class="prf-actions"] button[class="action-text Button--primary following-text"]{
+    color:transparent;
+}
+div[class="prf-actions"] button[class="action-text Button--primary following-text"]:before{
+    content:"フォロー中";
+    font-size:1em;
+    color:#fff;
+    position: relative;
+    left: 0em; 
+}
+div[class="prf-actions"] button[class="js-action-unfollow action-text unfollow-text"]{
+    color:transparent;
+}
+div[class="prf-actions"] button[class="js-action-unfollow action-text unfollow-text"]:before{
+    content:"フォロー解除";
+    font-size:1em;
+    color:#fff;
+    position: relative;
+    left: 0em; 
+}
+
+
+div[class="prf-actions"] a[data-type="tweets"]{
+    color:transparent;
+}
+div[class="prf-actions"] a[data-type="tweets"]:before{
+    content:"ツイート数";
+    font-size:1.2em;
+    color:#657786;
+}
+
+
+div[class="js-show-this-thread"] p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"]{
+    color:transparent;
+}
+div[class="js-show-this-thread"] p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"]:before{
+    content:"このスレッドを開く";
+    font-size:1em;
+    color:#1da1f2;
+}
+div[class="js-replies-before tweet-detail-reply"] div[class="js-stream-item js-cursor-top conversation-more stream-item is-actionable txt-link padding-v--10"]{
+    color:transparent;
+}
+div[class="js-replies-before tweet-detail-reply"] div[class="js-stream-item js-cursor-top conversation-more stream-item is-actionable txt-link padding-v--10"]:before{
+    content:"もっと見る";
+    font-size:1em;
+    color:#1da1f2;
+}
+div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t--10"] div[class="other-replies txt-ellipsis"]{
+    color:transparent;
+}
+div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t--10"] div[class="other-replies txt-ellipsis"]:before{
+    content:"返信先:";
+    font-size:1em;
+    color:#8899a6;
+}
+*/

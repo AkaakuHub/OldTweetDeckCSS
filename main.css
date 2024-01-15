@@ -1,5 +1,22 @@
-/* スクロールバー */
+button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12 is-disabled"]::after {
+	content: "ツイート";
+	font-size: 12px;
+}
 
+button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12 is-disabled"] {
+	font-size: 0!important;
+}
+
+span[class="js-account-safeguard-text"]::after {
+	content: "本当にそのアカウントでいいの？";
+	font-size: 12px;
+}
+
+span[class="js-account-safeguard-text"] {
+    font-size: 0!important;
+}
+
+/* スクロールバー */
 html,
 body {
 	scrollbar-width: thin !important;
@@ -29,34 +46,6 @@ body {
 	background-color: #8c8992;
 	border-radius: 12px;
 }
-
-/* 𝕏化 */
-/* div[class="js-app-loading login-container"] div[class="block txt-center js-signin-ui"] {
-    position: relative;
-}
-div[class="js-app-loading login-container"] div[class="block txt-center js-signin-ui"]:after {
-  content: "𝕏";
-    color: #fff;
-    font-size: 25em;
-    background-color: #1c2938;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-}
-ul[class="js-int-scroller"]{
-    position: relative;
-}
-ul[class="js-int-scroller"]:after{
-    color: #fff;
-    font-size: 3em;
-    content:"𝕏";
-    position: absolute;
-    top: 140%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
 
 /* ボタンの大きさ */
 .dm-action .icon,
@@ -96,7 +85,6 @@ html.dark .compose-text-container {
 
 
 /* いろいろ日本語化 */
-/* 日本語化は現在不可能 */
 span[class="column-heading"] {
 	font-size: 0;
 }
@@ -242,32 +230,44 @@ div[class="prf-actions"] button[class="js-action-unfollow action-text unfollow-t
 
 
 div[class="js-show-this-thread"] p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"] {
-	color: transparent;
+	font-size: 0;
+}
+
+div[class="js-show-this-thread"] p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"] > a{
+	font-size: initial;
 }
 
 div[class="js-show-this-thread"] p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"]:before {
 	content: "このスレッドを開く";
-	font-size: 1em;
+	font-size: 12px;
 	color: #1da1f2;
 }
 
 div[class="js-replies-before tweet-detail-reply"] div[class="js-stream-item js-cursor-top conversation-more stream-item is-actionable txt-link padding-v--10"] {
-	color: transparent;
+	font-size: 0;
+}
+
+div[class="js-replies-before tweet-detail-reply"] div[class="js-stream-item js-cursor-top conversation-more stream-item is-actionable txt-link padding-v--10"] > a {
+	font-size: initial;
 }
 
 div[class="js-replies-before tweet-detail-reply"] div[class="js-stream-item js-cursor-top conversation-more stream-item is-actionable txt-link padding-v--10"]:before {
 	content: "もっと見る";
-	font-size: 1em;
+	font-size: 12px;
 	color: #1da1f2;
 }
 
 div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t--10"] div[class="other-replies txt-ellipsis"] {
-	color: transparent;
+	font-size: 0;
+}
+
+div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t--10"] div[class="other-replies txt-ellipsis"] > a{
+	font-size: initial;
 }
 
 div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t--10"] div[class="other-replies txt-ellipsis"]:before {
 	content: "返信先:";
-	font-size: 1em;
+	font-size: 12px;
 	color: #8899a6;
 }
 

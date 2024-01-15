@@ -1,3 +1,11 @@
+div[class="mdl-links"]::before {
+	white-space: pre;
+	content: "日本語化CSS v1.0.2 by Akaaku\A";
+	font-size: 1em;
+	color: #8899a6;
+}
+
+
 button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12 is-disabled"]::after {
 	content: "ツイート";
 	font-size: 12px;
@@ -9,7 +17,9 @@ button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-e
 
 span[class="js-account-safeguard-text"]::after {
 	content: "本当にそのアカウントでいいの？";
-	font-size: 12px;
+	font-size: 14px;
+    border-bottom:solid 1px #d6b90d;
+    color:#d6b90d;
 }
 
 span[class="js-account-safeguard-text"] {
@@ -268,12 +278,5 @@ div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t
 div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t--10"] div[class="other-replies txt-ellipsis"]:before {
 	content: "返信先:";
 	font-size: 12px;
-	color: #8899a6;
-}
-
-div[class="mdl-links"]::before {
-	white-space: pre;
-	content: "日本語化CSS v1.0.1 by Akaaku\A";
-	font-size: 1em;
 	color: #8899a6;
 }

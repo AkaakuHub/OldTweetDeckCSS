@@ -1,3 +1,3 @@
 # OldTweetDeckCSS
 
-カスタムCSSのところに入れてね
+Stylus使ってね(deckのカスタムCSSだとQUOTAエラー)

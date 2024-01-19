@@ -1,60 +1,44 @@
 div[class="mdl-links"]::before {
-	white-space: pre;
-	content: "日本語化CSS v1.0.2 by Akaaku\A";
-	font-size: 1em;
-	color: #8899a6;
-}
-
-
-button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12 is-disabled"]::after {
-	content: "ツイート";
-	font-size: 12px;
-}
-
-button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12 is-disabled"] {
-	font-size: 0!important;
-}
-
-span[class="js-account-safeguard-text"]::after {
-	content: "本当にそのアカウントでいいの？";
-	font-size: 14px;
-    border-bottom:solid 1px #d6b90d;
-    color:#d6b90d;
-}
-
-span[class="js-account-safeguard-text"] {
-    font-size: 0!important;
+    white-space: pre;
+    content: "日本語化CSS v1.1.0 by Akaaku\A";
+    font-size: 1em;
+    color: #8899a6;
 }
 
 /* スクロールバー */
 html,
 body {
-	scrollbar-width: thin !important;
-	/* Firefox */
-	overflow-y: scroll !important;
-	/* 常に縦のスクロールバーを表示 */
+    scrollbar-width: thin !important;
+    /* Firefox */
+    overflow-y: scroll !important;
+    /* 常に縦のスクロールバーを表示 */
 }
 
 ::-webkit-scrollbar {
-	width: 16px;
-	/* スクロールバーの太さ */
+    width: 16px;
+    /* スクロールバーの太さ */
 }
 
 /* 背景 */
 ::-webkit-scrollbar-track {
-	background-color: #213242;
-	border-radius: 12px;
-	/* border: solid 3px #fff; */
+    background-color: #213242;
+    border-radius: 12px;
+    /* border: solid 3px #fff; */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background-color: #61636c;
+    background-color: #61636c;
 }
 
 /* 取っ手 */
 ::-webkit-scrollbar-thumb {
-	background-color: #8c8992;
-	border-radius: 12px;
+    background-color: #8c8992;
+    border-radius: 12px;
+}
+
+/* 通知の列、背景を変える */
+section[data-column-type="col_interactions"]  article {
+    background-color: #1c2b39!important;
 }
 
 /* ボタンの大きさ */
@@ -64,8 +48,8 @@ body {
 .tweet-action .Icon,
 .tweet-detail-action .icon,
 .tweet-detail-action .Icon {
-	display: block;
-	font-size: 25px;
+    display: block;
+    font-size: 25px;
 }
 
 html.dark .dm-action .icon,
@@ -74,209 +58,330 @@ html.dark .tweet-action .icon,
 html.dark .tweet-action .Icon,
 html.dark .tweet-detail-action .icon,
 html.dark .tweet-detail-action .Icon {
-	display: block;
-	font-size: 25px;
+    display: block;
+    font-size: 25px;
 }
 
 /* ドロップダウンメニューがはみ出さないように */
 .js-dropdown-content a::before {
-	font-size: 10.5px;
+    font-size: 10.5px;
 }
 
 /* 返信のボックス色 */
 html.dark .bg-color-twitter-white {
-	background-color: #15202b !important;
-	color: #fff;
+    background-color: #15202b !important;
+    color: #fff;
 }
 
 html.dark .compose-text-container {
-	background-color: #15202b;
+    background-color: #15202b;
 }
 
 
 /* いろいろ日本語化 */
-span[class="column-heading"] {
-	font-size: 0;
+span.column-heading {
+    font-size: 0;
+}
+
+/* リスト無効 */
+section[data-column-type="col_list"] span[class="column-heading"] {
+    font-size: 14px;
 }
 
 section[data-column-type="col_timeline"] span[class="column-heading"]:before {
-	content: "ホーム";
-	font-size: 14px;
+    content: "ホーム";
+    font-size: 14px;
 }
 
 section[data-column-type="col_interactions"] span[class="column-heading"]:before {
-	content: "通知";
-	font-size: 14px;
+    content: "通知";
+    font-size: 14px;
 }
 
 section[data-column-type="col_usertweets"] span[class="column-heading"]:before {
-	content: "ユーザー";
-	font-size: 14px;
+    content: "ユーザー";
+    font-size: 14px;
 }
 
 section[data-column-type="col_messages"] span[class="column-heading"]:before {
-	content: "DM";
-	font-size: 14px;
+    content: "DM";
+    font-size: 14px;
 }
 
 section[data-column-type="col_trends"] span[class="column-heading"]:before {
-	content: "トレンド";
-	font-size: 14px;
+    content: "トレンド";
+    font-size: 14px;
 }
 
 section[data-column-type="col_favorites"] span[class="column-heading"]:before {
-	content: "いいね";
-	font-size: 14px;
+    content: "いいね";
+    font-size: 14px;
 }
 
 section[data-column-type="col_mentions"] span[class="column-heading"]:before {
-	content: "メンション";
-	font-size: 14px;
+    content: "メンション";
+    font-size: 14px;
 }
 
 section[data-column-type="col_followers"] span[class="column-heading"]:before {
-	content: "フォロワー";
-	font-size: 14px;
+    content: "フォロワー";
+    font-size: 14px;
 }
 
 section[data-column-type="col_scheduled"] span[class="column-heading"]:before {
-	content: "予約ツイート";
-	font-size: 14px;
+    content: "予約ツイート";
+    font-size: 14px;
 }
 
 section[data-column-type="col_inbox"] span[class="column-heading"]:before {
-	content: "DM(全アカウント)";
-	font-size: 14px;
+    content: "DM(全アカウント)";
+    font-size: 14px;
 }
 
 section[data-column-type="col_me"] span[class="column-heading"]:before {
-	content: "メンション(全アカウント)";
-	font-size: 14px;
+    content: "メンション(全アカウント)";
+    font-size: 14px;
 }
 
 section[data-column-type="col_activity"] span[class="column-heading"]:before {
-	content: "アクティビティ";
-	font-size: 14px;
+    content: "アクティビティ";
+    font-size: 14px;
 }
 
 
 div[class="nbfc txt-line-height--20 flex-auto padding-b--2"] {
-	font-size: 0px;
+    font-size: 0px;
 }
 
-div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]>a {
-	font-size: initial;
+div[class="nbfc txt-line-height--20 flex-auto padding-b--2"] > a {
+    font-size: initial;
 }
 
 article[data-key*="favorite_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after {
-	content: "さんがあなたのツイートをいいねしました";
-	font-size: 14px;
-	color: #fff;
-	position: relative;
-	left: 0em;
+    content: "さんがあなたのツイートをいいねしました";
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    left: 0em;
 }
 
 article[data-key*="retweet_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after {
-	content: "さんがあなたのツイートをリツイートしました";
-	font-size: 14px;
-	color: #fff;
-	position: relative;
-	left: 0em;
+    content: "さんがあなたのツイートをリツイートしました";
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    left: 0em;
 }
 
 article[data-key*="favorited_retweet_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after {
-	content: "さんがあなたのリツイートをいいねしました";
-	font-size: 14px;
-	color: #fff;
-	position: relative;
-	left: 0em;
+    content: "さんがあなたのリツイートをいいねしました";
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    left: 0em;
 }
 
 article[data-key*="retweeted_retweet_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after {
-	content: "さんがあなたのリツイートをリツイートしました";
-	font-size: 14px;
-	color: #fff;
-	position: relative;
-	left: 0em;
+    content: "さんがあなたのリツイートをリツイートしました";
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    left: 0em;
 }
 
 
 
 div[class="prf-actions"] button[class="action-text follow-text btn-on-dark"] span {
-	color: transparent;
+    color: transparent;
 }
 
 div[class="prf-actions"] button[class="action-text follow-text btn-on-dark"] span:before {
-	content: "フォローする";
-	font-size: 1em;
-	color: #1da1f2;
-	position: relative;
-	left: 0em;
+    content: "フォローする";
+    font-size: 1em;
+    color: #1da1f2;
+    position: relative;
+    left: 0em;
 }
 
 div[class="prf-actions"] button[class="action-text Button--primary following-text"] {
-	color: transparent;
+    color: transparent;
 }
 
 div[class="prf-actions"] button[class="action-text Button--primary following-text"]:before {
-	content: "フォロー中";
-	font-size: 1em;
-	color: #fff;
-	position: relative;
-	left: 0em;
+    content: "フォロー中";
+    font-size: 1em;
+    color: #fff;
+    position: relative;
+    left: 0em;
 }
 
 div[class="prf-actions"] button[class="js-action-unfollow action-text unfollow-text"] {
-	color: transparent;
+    color: transparent;
 }
 
 div[class="prf-actions"] button[class="js-action-unfollow action-text unfollow-text"]:before {
-	content: "フォロー解除";
-	font-size: 1em;
-	color: #fff;
-	position: relative;
-	left: 0em;
+    content: "フォロー解除";
+    font-size: 1em;
+    color: #fff;
+    position: relative;
+    left: 0em;
 }
 
 
 div[class="js-show-this-thread"] p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"] {
-	font-size: 0;
+    font-size: 0;
 }
 
-div[class="js-show-this-thread"] p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"] > a{
-	font-size: initial;
+div[class="js-show-this-thread"] p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"] > a {
+    font-size: initial;
 }
 
 div[class="js-show-this-thread"] p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"]:before {
-	content: "このスレッドを開く";
-	font-size: 12px;
-	color: #1da1f2;
+    content: "このスレッドを開く";
+    font-size: 12px;
+    color: #1da1f2;
 }
 
 div[class="js-replies-before tweet-detail-reply"] div[class="js-stream-item js-cursor-top conversation-more stream-item is-actionable txt-link padding-v--10"] {
-	font-size: 0;
+    font-size: 0;
 }
 
 div[class="js-replies-before tweet-detail-reply"] div[class="js-stream-item js-cursor-top conversation-more stream-item is-actionable txt-link padding-v--10"] > a {
-	font-size: initial;
+    font-size: initial;
 }
 
 div[class="js-replies-before tweet-detail-reply"] div[class="js-stream-item js-cursor-top conversation-more stream-item is-actionable txt-link padding-v--10"]:before {
-	content: "もっと見る";
-	font-size: 12px;
-	color: #1da1f2;
+    content: "もっと見る";
+    font-size: 12px;
+    color: #1da1f2;
 }
 
 div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t--10"] div[class="other-replies txt-ellipsis"] {
-	font-size: 0;
+    font-size: 0;
 }
 
-div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t--10"] div[class="other-replies txt-ellipsis"] > a{
-	font-size: initial;
+div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t--10"] div[class="other-replies txt-ellipsis"] > a {
+    font-size: initial;
 }
 
 div[class="js-reply-info-container txt-size-variable--12 padding-h--10 padding-t--10"] div[class="other-replies txt-ellipsis"]:before {
-	content: "返信先:";
-	font-size: 12px;
-	color: #8899a6;
+    content: "返信先:";
+    font-size: 12px;
+    color: #8899a6;
+}
+
+/* 左はじツイート部分まわり */
+button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12 is-disabled"]::after {
+    content: "ツイート";
+    font-size: 12px;
+}
+
+button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12 is-disabled"] {
+    font-size: 0!important;
+}
+
+button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12"]::after {
+    content: "ツイート";
+    font-size: 12px;
+}
+
+button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12"] {
+    font-size: 0!important;
+}
+
+span[class="js-account-safeguard-text"]::after {
+    content: "本当にそのアカウントでいいの？";
+    font-size: 14px;
+    border-bottom: solid 1px #d6b90d;
+    color: #d6b90d;
+}
+
+span[class="js-account-safeguard-text"] {
+    font-size: 0!important;
+}
+
+h1[class="js-compose-title compose-title-text txt-ellipsis inline-block"]::after {
+    content: "新しいツイート";
+    font-size: 18px;
+}
+
+h1[class="js-compose-title compose-title-text txt-ellipsis inline-block"] {
+    font-size: 0!important;
+}
+
+div[class="pull-left compose-text-title"]::after {
+    content: "アカウントを選択";
+    font-size: 14px;
+}
+
+div[class="pull-left compose-text-title"] {
+    font-size: 0!important;
+}
+
+div[class="js-compose-message-header margin-b--9 compose-text-title"]::after {
+    content: "本文";
+    font-size: 14px;
+}
+
+div[class="js-compose-message-header margin-b--9 compose-text-title"] {
+    font-size: 0!important;
+}
+
+
+/* モーダル化 */
+/* div[class="js-app-columns app-columns horizontal-flow-container without-tweet-drag-handles"] { */
+_twModal1 {
+    position:fixed!important;
+    left:-270px;
+}
+
+/* div[class="js-drawer drawer"] { */
+_twModal2 {
+    position: fixed;
+    left: 50%!important;
+    transform: translate(-50%, 0%);
+    z-index: 9999!important;
+}
+
+
+
+
+
+/* RTモーダル */
+button[class="js-action-button js-retweet-button Button--primary"]::after {
+    content: "リツイート";
+    font-size: 14px;
+}
+
+button[class="js-action-button js-retweet-button Button--primary"] {
+    font-size: 0!important;
+}
+
+button[class="js-action-button btn btn-on-dark margin-r--8"]::after {
+    content: "引用リツイート";
+    font-size: 14px;
+}
+
+button[class="js-action-button btn btn-on-dark margin-r--8"] {
+    font-size: 0!important;
+}
+
+
+/* 返信 */
+button[class="js-send-button js-spinner-button js-show-tip Button--primary"]::after {
+    content: "ツイート";
+    font-size: 12px;
+}
+
+button[class="js-send-button js-spinner-button js-show-tip Button--primary"] {
+    font-size: 0!important;
+}
+
+button[class="js-send-button js-spinner-button js-show-tip Button--primary is-disabled"]::after {
+    content: "ツイート";
+    font-size: 12px;
+}
+
+button[class="js-send-button js-spinner-button js-show-tip Button--primary is-disabled"] {
+    font-size: 0!important;
 }

@@ -1,6 +1,6 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.2.0 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.2.1 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
 }
@@ -29,7 +29,8 @@ section.js-column.column.will-animate:nth-child(even) {
 
 /* コラム名小さくする */
 header[class="js-column-header js-action-header flex-shrink--0 column-header"],
-header[class="js-column-header js-action-header flex-shrink--0 column-header "] {
+header[class="js-column-header js-action-header flex-shrink--0 column-header "],
+header[class="js-column-header js-action-header flex-shrink--0 column-header is-actionable"]{
     height:20px!important;
     align-items: center!important;
 }

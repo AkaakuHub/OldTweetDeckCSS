@@ -5,7 +5,6 @@ div[class="mdl-links"]::before {
     color: #8899a6;
 }
 
-
 /* tweetdeck 2段 */
 /* 1段目高さ */
 section.js-column.column.will-animate {
@@ -250,7 +249,11 @@ article[data-key*="retweeted_retweet_"] div[class="nbfc txt-line-height--20 flex
     left: 0em;
 }
 
+div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]{
+    line-height:1.35!important;
+}
 
+/* */
 
 div[class="prf-actions"] button[class="action-text follow-text btn-on-dark"] span {
     color: transparent;

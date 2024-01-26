@@ -1,18 +1,19 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.2.1 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.2.2 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
 }
 
 
 /* tweetdeck 2段 */
+/* 1段目高さ */
 section.js-column.column.will-animate {
     height: calc(60% - 5px) !important;
     margin: 0 !important;
 }
 
-/* もう一つの列の高さを変更 */
+/* 2段目高さ */
 section.js-column.column.will-animate:nth-child(even) {
     height: calc(40% - 5px) !important;
 }
@@ -28,17 +29,16 @@ section.js-column.column.will-animate:nth-child(even) {
 /* end */
 
 /* コラム名小さくする */
-header[class="js-column-header js-action-header flex-shrink--0 column-header"],
-header[class="js-column-header js-action-header flex-shrink--0 column-header "],
-header[class="js-column-header js-action-header flex-shrink--0 column-header is-actionable"]{
+header[class^="js-column-header js-action-header flex-shrink--0 column-header"] {
     height:20px!important;
     align-items: center!important;
+    background-color: #1c3247!important;
+    border-radius: 10px!important;
 }
 
 i[class^="pull-left margin-l--10 margin-r--2 column-type-icon icon"] {
     margin-top: -28px!important;
 }
-
 /* end */
 
 /* スクロールバー */

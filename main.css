@@ -95,9 +95,10 @@ body {
 }
 
 /* 通知の列、背景を変える */
-section[data-column-type="col_interactions"]  article {
+/* section[data-column-type="col_interactions"]  article {
     background-color: #1c2b39!important;
 }
+*/
 
 /* ボタンの大きさ */
 .dm-action .icon,

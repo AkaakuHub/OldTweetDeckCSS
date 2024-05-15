@@ -1,6 +1,6 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.2.3 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.2.4 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
 }
@@ -27,18 +27,6 @@ section.js-column.column.will-animate:nth-child(even) {
 
 /* end */
 
-/* コラム名小さくする */
-header[class^="js-column-header js-action-header flex-shrink--0 column-header"] {
-    height:20px!important;
-    align-items: center!important;
-    background-color: #1c3247!important;
-    border-radius: 10px!important;
-}
-
-i[class^="pull-left margin-l--10 margin-r--2 column-type-icon icon"] {
-    margin-top: -28px!important;
-}
-/* end */
 
 /* スクロールバー */
 html,
@@ -94,8 +82,28 @@ body {
     background-color: #61636c;
 }
 
+/* 変なスクロールバー消す */
+html.dark .antiscroll-inner {
+    overflow: hidden!important;
+}
+
+/* コラム名小さくする */
+header[class^="js-column-header js-action-header flex-shrink--0 column-header"] {
+    height:20px!important;
+    align-items: center!important;
+    background-color: #1c3247!important;
+    border-radius: 10px!important;
+}
+
+i[class^="pull-left margin-l--10 margin-r--2 column-type-icon icon"] {
+    margin-top: -28px!important;
+}
+/* end */
+
+
 /* 通知の列、背景を変える */
-/* section[data-column-type="col_interactions"]  article {
+/* キー移動のハイライトが消えるので廃止 */
+/*section[data-column-type="col_interactions"]  article {
     background-color: #1c2b39!important;
 }
 */

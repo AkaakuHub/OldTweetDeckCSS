@@ -1,8 +1,14 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.2.4 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.2.5 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
+}
+
+/* 畳んだときの幅をギリギリに */
+
+html .app-content section.btd-column-collapsed.column {
+    width: 22px!important;
 }
 
 /* tweetdeck 2段 */

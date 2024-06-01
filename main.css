@@ -1,6 +1,6 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.3 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.3.1 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
 }
@@ -417,11 +417,15 @@ span[class="js-schedule-button-label label padding-ls"] {
     font-size: 0!important;
 }
 
-span[class="label padding-ls"]::after {
-    content: "DMを送る";
+button[class="js-tweet-button btn btn-on-blue full-width txt-left margin-b--12 padding-v--6 padding-h--12"] > span[class="label padding-ls"]::after {
+    content: "新しいツイート";
     font-size: 14px;
 }
 
+button[class="js-dm-button js-show-tip btn btn-on-blue full-width txt-left padding-v--6 padding-h--12 margin-b--12"] > span[class="label padding-ls"]::after {
+    content: "新しいDM";
+    font-size: 14px;
+}
 
 span[class="label padding-ls"] {
     font-size: 0!important;

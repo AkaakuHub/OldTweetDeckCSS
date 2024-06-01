@@ -1,12 +1,11 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.2.5 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.3 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
 }
 
 /* 畳んだときの幅をギリギリに */
-
 html .app-content section.btd-column-collapsed.column {
     width: 22px!important;
 }
@@ -32,8 +31,6 @@ section.js-column.column.will-animate:nth-child(even) {
 }
 
 /* end */
-
-
 /* スクロールバー */
 html,
 body {
@@ -95,7 +92,7 @@ html.dark .antiscroll-inner {
 
 /* コラム名小さくする */
 header[class^="js-column-header js-action-header flex-shrink--0 column-header"] {
-    height:20px!important;
+    height: 20px!important;
     align-items: center!important;
     background-color: #1c3247!important;
     border-radius: 10px!important;
@@ -105,15 +102,12 @@ i[class^="pull-left margin-l--10 margin-r--2 column-type-icon icon"] {
     margin-top: -28px!important;
 }
 /* end */
-
-
 /* 通知の列、背景を変える */
 /* キー移動のハイライトが消えるので廃止 */
 /*section[data-column-type="col_interactions"]  article {
     background-color: #1c2b39!important;
 }
 */
-
 /* ボタンの大きさ */
 .dm-action .icon,
 .dm-action .Icon,
@@ -262,12 +256,11 @@ article[data-key*="retweeted_retweet_"] div[class="nbfc txt-line-height--20 flex
     left: 0em;
 }
 
-div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]{
-    line-height:1.35!important;
+div[class="nbfc txt-line-height--20 flex-auto padding-b--2"] {
+    line-height: 1.35!important;
 }
 
 /* */
-
 div[class="prf-actions"] button[class="action-text follow-text btn-on-dark"] span {
     color: transparent;
 }
@@ -404,6 +397,44 @@ div[class="js-compose-message-header margin-b--9 compose-text-title"] {
     font-size: 0!important;
 }
 
+span[class="js-add-image-button-label label padding-ls"]::after {
+    content: "画像 / 動画を追加する";
+    font-size: 14px;
+}
+
+
+span[class="js-add-image-button-label label padding-ls"] {
+    font-size: 0!important;
+}
+
+span[class="js-schedule-button-label label padding-ls"]::after {
+    content: "予約ツイート";
+    font-size: 14px;
+}
+
+
+span[class="js-schedule-button-label label padding-ls"] {
+    font-size: 0!important;
+}
+
+span[class="label padding-ls"]::after {
+    content: "DMを送る";
+    font-size: 14px;
+}
+
+
+span[class="label padding-ls"] {
+    font-size: 0!important;
+}
+
+label[class="checkbox checkbox-reversed compose-remember-state margin-a--15 txt-right"]::before {
+    content: "開いたままにする";
+    font-size: 14px;
+}
+
+label[class="checkbox checkbox-reversed compose-remember-state margin-a--15 txt-right"]  {
+    font-size: 0!important;
+}
 
 /* モーダル化 */
 /* 開発停止中 */
@@ -420,11 +451,6 @@ div[class="js-compose-message-header margin-b--9 compose-text-title"] {
     transform: translate(-50%, 0%);
     z-index: 9999!important;
 } */
-
-
-
-
-
 /* RTモーダル */
 button[class="js-action-button js-retweet-button Button--primary"]::after {
     content: "リツイート";
@@ -444,6 +470,14 @@ button[class="js-action-button btn btn-on-dark margin-r--8"] {
     font-size: 0!important;
 }
 
+h3[class="mdl-header-title js-header-title"]::after{
+    content: "リツイートしますか？";
+    font-size: 14px;
+}
+
+h3[class="mdl-header-title js-header-title"]{
+    font-size: 0!important;
+}
 
 /* 返信 */
 button[class="js-send-button js-spinner-button js-show-tip Button--primary"]::after {

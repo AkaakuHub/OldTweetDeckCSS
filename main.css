@@ -1,6 +1,6 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.3.3 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.3.4 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
 }
@@ -471,15 +471,6 @@ button[class="js-action-button btn btn-on-dark margin-r--8"]::after {
 }
 
 button[class="js-action-button btn btn-on-dark margin-r--8"] {
-    font-size: 0!important;
-}
-
-h3[class="mdl-header-title js-header-title"]::after{
-    content: "リツイートしますか？";
-    font-size: 14px;
-}
-
-h3[class="mdl-header-title js-header-title"]{
     font-size: 0!important;
 }
 

@@ -1,6 +1,6 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.3.1 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.3.2 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
 }
@@ -510,4 +510,12 @@ button[class="js-send-button js-spinner-button js-show-tip Button--primary is-di
 
 #settings-modal > div > div > footer > button > span {
     font-size: 0!important;
+}
+
+/* 左のツールバーのボタンをスクロールできるようにして、行追加ボタンが隠れないようになる */
+#column-navigator > div {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 90%;
+    scrollbar-width: none!important;
 }

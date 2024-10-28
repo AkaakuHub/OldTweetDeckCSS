@@ -1,11 +1,11 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.3.5 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.4.0 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
 }
 
-/* 畳んだときの幅をギリギリに */
+/* カラムを畳んだときの幅をギリギリに */
 html .app-content section.btd-column-collapsed.column {
     width: 22px!important;
 }
@@ -29,11 +29,20 @@ section.js-column.column.will-animate:nth-child(even) {
     row-gap: 8px;
     column-gap: 5px;
 }
-
 /* end */
+
+/* ツイート本文の大きさ */
+div[class="tweet-body js-tweet-body"] {
+    font-size: 0.95rem;
+}
+
+/* ユーザー名の大きさ */
+b[class="fullname link-complex-target"] {
+    font-size: 12px;
+}
+
 /* スクロールバー */
-html,
-body {
+* {
     scrollbar-width: thin !important;
     /* 常に縦のスクロールバーを表示 */
 }
@@ -72,7 +81,6 @@ body {
 }
 
 /* end */
-
 /* 変なスクロールバー消す */
 html.dark .antiscroll-inner {
     overflow: hidden!important;
@@ -209,12 +217,12 @@ div[class="nbfc txt-line-height--20 flex-auto padding-b--2"] {
 }
 
 div[class="nbfc txt-line-height--20 flex-auto padding-b--2"] > a {
-    font-size: initial;
+    font-size: 12.5px;
 }
 
 article[data-key*="favorite_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after {
     content: "さんがあなたのツイートをいいねしました";
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     position: relative;
     left: 0em;
@@ -222,7 +230,7 @@ article[data-key*="favorite_"] div[class="nbfc txt-line-height--20 flex-auto pad
 
 article[data-key*="retweet_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after {
     content: "さんがあなたのツイートをリツイートしました";
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     position: relative;
     left: 0em;
@@ -230,7 +238,7 @@ article[data-key*="retweet_"] div[class="nbfc txt-line-height--20 flex-auto padd
 
 article[data-key*="favorited_retweet_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after {
     content: "さんがあなたのリツイートをいいねしました";
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     position: relative;
     left: 0em;
@@ -238,7 +246,7 @@ article[data-key*="favorited_retweet_"] div[class="nbfc txt-line-height--20 flex
 
 article[data-key*="retweeted_retweet_"] div[class="nbfc txt-line-height--20 flex-auto padding-b--2"]:after {
     content: "さんがあなたのリツイートをリツイートしました";
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     position: relative;
     left: 0em;
@@ -424,7 +432,7 @@ label[class="checkbox checkbox-reversed compose-remember-state margin-a--15 txt-
     font-size: 14px;
 }
 
-label[class="checkbox checkbox-reversed compose-remember-state margin-a--15 txt-right"]  {
+label[class="checkbox checkbox-reversed compose-remember-state margin-a--15 txt-right"] {
     font-size: 0!important;
 }
 
@@ -527,4 +535,9 @@ div[class="activity-header has-source-avatar flex flex-align--baseline"] > time:
     grid-row-gap: 4px;
 }
 
-
+/* end */
+/* 日付レイアウト修正 */
+header[class="tweet-header js-tweet-header flex flex-row flex-align--baseline"] {
+    display: flex!important;
+    flex-direction: column!important;
+}

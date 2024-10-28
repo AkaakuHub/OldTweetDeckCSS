@@ -1,6 +1,6 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.3.4 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.3.5 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
 }
@@ -39,51 +39,39 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 14px;
-    /* スクロールバーの太さ */
+    width: 12px!important;
+    height: 12px!important;
+    /* スクロールバーの太さと高さ */
 }
 
 /* 背景 */
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:horizontal {
     background-color: #213242;
     border-radius: 12px;
     /* border: solid 3px #fff; */
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #61636c;
-}
-
 /* 取っ手 */
-::-webkit-scrollbar-thumb {
-    background-color: #8c8992;
-    border-radius: 12px;
-}
-
-/* 横向きのスクロールバー */
-::-webkit-scrollbar:horizontal {
-    height: 14px;
-    /* スクロールバーの高さ */
-    overflow-x: scroll !important;
-    /* 常に横のスクロールバーを表示 */
-}
-
-/* 背景 */
-::-webkit-scrollbar-track:horizontal {
-    background-color: #213242;
-    border-radius: 12px;
-}
-
-/* スクロールバーのつまみ */
+::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:horizontal {
     background-color: #8c8992;
     border-radius: 12px;
 }
 
-/* ホバー時のスクロールバーのつまみ */
+/* ホバー時の取っ手 */
+::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:horizontal:hover {
     background-color: #61636c;
 }
+
+/* 横向きのスクロールバー */
+::-webkit-scrollbar:horizontal {
+    overflow-x: scroll !important;
+    /* 常に横のスクロールバーを表示 */
+}
+
+/* end */
 
 /* 変なスクロールバー消す */
 html.dark .antiscroll-inner {
@@ -510,3 +498,33 @@ button[class="js-send-button js-spinner-button js-show-tip Button--primary is-di
     height: calc(100% - 60px);
     scrollbar-width: none!important;
 }
+
+/* 通知領域のレイアウト修正 */
+div[class="activity-header has-source-avatar flex flex-align--baseline"] {
+    display: grid !important;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    align-items: start;
+}
+
+/* nth-child(1)を左上に配置 */
+div[class="activity-header has-source-avatar flex flex-align--baseline"] > div:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+/* nth-child(2)を右上に配置 */
+div[class="activity-header has-source-avatar flex flex-align--baseline"] > div:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    grid-row-gap: 4px;
+}
+
+/* nth-child(3)を右下に配置 */
+div[class="activity-header has-source-avatar flex flex-align--baseline"] > time:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    grid-row-gap: 4px;
+}
+
+

@@ -1,6 +1,6 @@
 div[class="mdl-links"]::before {
     white-space: pre;
-    content: "日本語化+2段化+α CSS v1.4.0 by Akaaku\A";
+    content: "日本語化+2段化+α CSS v1.4.1 by Akaaku\A";
     font-size: 1em;
     color: #8899a6;
 }
@@ -41,16 +41,18 @@ b[class="fullname link-complex-target"] {
     font-size: 12px;
 }
 
-/* スクロールバー */
-* {
-    scrollbar-width: thin !important;
-    /* 常に縦のスクロールバーを表示 */
+/* カラムのスクロールバー幅の調整 */
+div[class="js-column-content column-content flex-auto position-rel flex flex-column height-p--100"] > * {    scrollbar-width: thin !important;
 }
 
-::-webkit-scrollbar {
-    width: 12px!important;
-    height: 12px!important;
-    /* スクロールバーの太さと高さ */
+/* Webkitブラウザ用の縦スクロールバーの幅の調整 */
+::-webkit-scrollbar:vertical {
+    width: 12px !important;
+}
+
+/* 横スクロールバーの高さはそのままにする */
+::-webkit-scrollbar:horizontal {
+    height: auto;
 }
 
 /* 背景 */
